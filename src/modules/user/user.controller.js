@@ -35,7 +35,7 @@ export const register = catchError(async (req, res, next) => {
         activationCode,
     });
     //create confirmationLink
-    const link = `https://tommy-two.vercel.app/auth/confirmEmail/${activationCode}`;
+    const link = `https://project-six-neon.vercel.app/auth/confirmEmail/${activationCode}`;
     // send confirmation email
 
     const isEmailSent = await sendEmail({
